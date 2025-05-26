@@ -15,7 +15,7 @@ public abstract class AbstractCheckString {
         return result;
     }
 
-    abstract String resultIsChecking();
+    abstract String checkResult();
 
     abstract boolean isCheck();
 }

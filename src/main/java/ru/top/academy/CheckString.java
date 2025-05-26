@@ -3,7 +3,7 @@ package ru.top.academy;
 public class CheckString extends AbstractCheckString {
 
     @Override
-     public String resultIsChecking() {
+     public String checkResult() {
         return (isCheck()) ? toString("Строка является палиндромом") : toString("Строка не является палиндромом");
     }
 

@@ -12,6 +12,6 @@ public class Main {
 
         AbstractCheckString checkString = new CheckString();
         checkString.setStr(str);
-        System.out.println(checkString.resultIsChecking());
+        System.out.println(checkString.checkResult());
     }
 }
