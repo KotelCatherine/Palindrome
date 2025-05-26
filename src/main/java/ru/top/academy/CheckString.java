@@ -3,12 +3,12 @@ package ru.top.academy;
 public class CheckString extends AbstractCheckString {
 
     @Override
-    public String resultIsChecking() {
+     public String resultIsChecking() {
         return (isCheck()) ? toString("Строка является палиндромом") : toString("Строка не является палиндромом");
     }
 
     @Override
-    public boolean isCheck() {
+     boolean isCheck() {
         String str = getStr();
         char[] array = str.toCharArray();
 
@@ -27,6 +27,7 @@ public class CheckString extends AbstractCheckString {
 
     @Override
     public void setStr(String str) {
+        str = str.replaceAll("[^a-zA-Z]+", "").toLowerCase();
         super.setStr(str);
     }
 

@@ -8,7 +8,6 @@ public class Main {
 
         try (Scanner scanner = new Scanner(System.in)) {
             str = scanner.nextLine();
-            str = str.replaceAll("[^a-zA-Z]+", "").toLowerCase();
         }
 
         AbstractCheckString checkString = new CheckString();

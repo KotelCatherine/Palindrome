@@ -11,7 +11,7 @@ public abstract class AbstractCheckString {
         return str;
     }
 
-    String toString(String result) {
+    public String toString(String result) {
         return result;
     }
 
