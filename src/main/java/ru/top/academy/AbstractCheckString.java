@@ -2,11 +2,6 @@ package ru.top.academy;
 
 public abstract class AbstractCheckString {
     private String str;
-    abstract String resultIsChecking();
-
-    abstract boolean isCheck();
-
-
 
     public void setStr(String str) {
         this.str = str;
@@ -16,7 +11,11 @@ public abstract class AbstractCheckString {
         return str;
     }
 
-    String toString(String result){
+    String toString(String result) {
         return result;
     }
+
+    abstract String resultIsChecking();
+
+    abstract boolean isCheck();
 }

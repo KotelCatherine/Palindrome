@@ -1,27 +1,21 @@
 package ru.top.academy;
 
 public class CheckString extends AbstractCheckString {
-    private char[] array;
-    private String str;
-
-    public CheckString() {
-    }
 
     @Override
     public String resultIsChecking() {
-
-        return (isCheck())?toString("Строка является палиндромом"):toString("Строка не является палиндромом");
+        return (isCheck()) ? toString("Строка является палиндромом") : toString("Строка не является палиндромом");
     }
 
     @Override
     public boolean isCheck() {
-        this.str = getStr();
-        array = str.toCharArray();
+        String str = getStr();
+        char[] array = str.toCharArray();
 
         int last = array.length - 1;
         int first = 0;
 
-        while(last > first) {
+        while (last > first) {
             char firstChar = array[first++];
             char lastChar = array[last--];
             if (firstChar != lastChar) {
@@ -43,6 +37,6 @@ public class CheckString extends AbstractCheckString {
 
     @Override
     public String toString(String result) {
-       return super.toString(result);
+        return super.toString(result);
     }
 }
